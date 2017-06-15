@@ -4,14 +4,12 @@
 
  Human , Employee , Manager example
 
-
  // Learnings from this exmaple
 
   . We are not creating a Human Type.
   . We are not intending to use Human Speak method.
   . This type of type hierarchy is common in OOPs langugages
     such as Java , C++ etc.
-
 */
 
 package main
@@ -31,7 +29,8 @@ type Human struct {
 // Speak
 
 func (h *Human) Speak() {
-	fmt.Println("Hi My name is ", h.Name,
+	fmt.Println(
+		"Hi My name is ", h.Name,
 		"I am a ", h.Age,
 		" year old ", h.Gender,
 		" , from ", h.City)
@@ -48,7 +47,8 @@ type Employee struct {
 // Lets create a method Speak for Employee  , so that we override the method of Human
 
 func (e *Employee) Speak() {
-	fmt.Println("Hi My name is ", e.Name,
+	fmt.Println(
+		"Hi My name is ", e.Name,
 		"I am a ", e.Age,
 		" year old ", e.Gender,
 		" currently living in ", e.City,
@@ -67,7 +67,8 @@ type Manager struct {
 // Creating a Speak function for Manager
 
 func (m *Manager) Speak() {
-	fmt.Println("Hi My name is ", m.Name,
+	fmt.Println(
+		"Hi My name is ", m.Name,
 		"I am a ", m.Age,
 		" year old ", m.Gender,
 		" currently living in ", m.City,
