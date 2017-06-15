@@ -4,6 +4,14 @@
 
  Human , Employee , Manager example
 
+
+ // Learnings from this exmaple
+
+  . We are not creating a Human Type.
+  . We are not intending to use Human Speak method.
+  . This type of type hierarchy is common in OOPs langugages
+    such as Java , C++ etc.
+
 */
 
 package main
