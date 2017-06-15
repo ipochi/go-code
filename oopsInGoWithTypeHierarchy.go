@@ -79,6 +79,18 @@ func (m *Manager) Speak() {
 
 func main() {
 
+	// Like OOPs world of Java where we can point an instance of the subtype like Employeee or Manager
+	// using a reference of the Parent class [ Human ]
+
+	// This would not be possible in the case of this exmaple of subtyping with composition
+
+	// So the below  2 lines statement will throw a error.
+
+	// cannot use Employee literal (type *Employee) as type Human in assignment
+
+	//var h Human
+	//h = &Employee{}
+
 	// an Employee instance
 	e := &Employee{
 		Human: Human{
